@@ -6,7 +6,8 @@
     :event="event"
     @show="value = $event.value"
   >
-    {{ value }}
+    {{ value.title }}
+    {{ value.artist }}
   </popover>
 </template>
 <script>
@@ -23,7 +24,7 @@ export default {
     },
     width: {
       type: Number,
-      default: 160
+      default: 200
     }
   },
   data() {
