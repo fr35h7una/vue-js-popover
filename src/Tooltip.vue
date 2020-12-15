@@ -6,8 +6,8 @@
     :event="event"
     @show="value = $event.value"
   >
-    {{ value.title }}
-    {{ value.artist }}
+    {{ $event.value.title }}
+    {{ $event.value.artist }}
   </popover>
 </template>
 <script>
